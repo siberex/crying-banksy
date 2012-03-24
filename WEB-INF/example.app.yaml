@@ -4,8 +4,12 @@
 application: my-application-id
 version: 1
 runtime: java
-public_root: /pub
 
+precompilation_enabled: true
+threadsafe: true
+
+
+public_root: /pub
 
 static_files:
   - include: /*
@@ -45,12 +49,17 @@ inbound_services:
 handlers:
   - url: /*
     servlet: org.ringojs.jsgi.JsgiServlet
-    name: CryingBanksy
+    name: MyApplicationName
     init_params:
       ringo-home: /
       module-path: app
+# devel:
       app: app
       optlevel: -1
+# production:
+#      app: production
+#      production: true
+#      optlevel: 9
 
 
 # Static pages for critical error handling.
