@@ -12,6 +12,14 @@ html, body {
 	overflow: hidden; /* тройной презерватив для IE */
 }
 
+a.contact {
+    color: #CCC;
+}
+
+.personal-info {
+    margin: 20px;
+}
+
 
 li {
     margin: 0.8em;
