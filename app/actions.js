@@ -23,5 +23,8 @@ app.get("/sitemap", require("./actions/sitemap").index);
 
 app.get("/rss", require("./actions/rss").index);
 
-//app.get("/", require("./actions/index").index);
-app.get("/", require("./actions/monochrome").index);
+app.get("/stats", require("./actions/index").alexa);
+app.get("/alexa", require("./actions/index").alexa);
+
+app.get("/", require("./actions/index").index);
+//app.get("/", require("./actions/monochrome").index);
