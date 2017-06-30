@@ -5,6 +5,7 @@
 
 # Local web server:
 # dev_appserver.sh ./
+# export RINGO_ENV=development:DEFAULT_ENCODING=UTF-8; dev_appserver.sh ./
 
 # Auth:
 # gcloud beta auth application-default login
