@@ -12,5 +12,6 @@ function index(request) {
 
   return app.render("sitemap.xml", context, {
     contentType: "text/xml",
+    master: 'empty'
   });
 } // index

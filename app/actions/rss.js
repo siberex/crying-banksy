@@ -12,5 +12,6 @@ function index(request) {
 
   return app.render("rss.xml", context, {
     contentType: "text/xml",
+    master: 'empty'
   });
 } // index

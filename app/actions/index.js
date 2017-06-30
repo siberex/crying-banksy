@@ -18,4 +18,4 @@ function index(request) {
 function alexa(request) {
     var context = {title: "Alexa stats for microstocks"};
     return app.render("alexa.html", context);
-//} // alexa
+} // alexa

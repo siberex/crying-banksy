@@ -1,9 +1,25 @@
 # YAML configuration, appengine-web.xml and web.xml will be automatically derived from app.yaml.
 # http://code.google.com/intl/en/appengine/docs/java/configyaml/appconfig_yaml.html
 
+# https://cloud.google.com/appengine/docs/standard/java/download
+
+# Local web server:
+# dev_appserver.sh ./
+
+# Auth:
+# gcloud beta auth application-default login
+# Credentials saved to file: ~/.config/gcloud/application_default_credentials.json
+
+# Deploy:
+# appcfg.sh -A crying-banksy -V 1 --use_google_application_default_credentials update ./
+# appcfg.sh update ./
+
+# Without credentials:
+# appcfg.sh --no_cookies update ./
+
 application: crying-banksy
 version: 1
-runtime: java
+runtime: java7
 
 precompilation_enabled: true
 threadsafe: true
