@@ -65,6 +65,7 @@ inbound_services:
 # Modules and packages should be placed in ringo-home.
 handlers:
   - url: /*
+    secure: always
     servlet: org.ringojs.jsgi.JsgiServlet
     name: CryingBanksy
     init_params:
