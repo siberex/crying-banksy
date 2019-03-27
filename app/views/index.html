@@ -1,7 +1,14 @@
 <section class="vcard personal-info">
     <h1 class="fn" itemprop="fn">Stephen Jingel</h1>
     <p class="occupation title" itemprop="title">Advertising photographer</p>
-    <p>Contact: <a class="contact email" itemprop="email" href="mailto:s@jingel.ru">s@jingel.ru</a></p>
+    <p>Contact: <a id="a-contact" class="contact email" itemprop="email" href="mailto:spambait@jingel.ru">spambait@jingel.ru</a></p>
+    <script>
+        // Crawler semi-protection
+        var a = document.getElementById('a-contact');
+        var link = a.innerText.replace('spambait', 'direct');
+        a.setAttribute('href', 'mailto:' + link);
+        a.innerText = link;
+    </script>
 </section>
 
 <script>
